@@ -1,0 +1,154 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+html {
+
+}
+
+body {
+  border: 1px solid black;
+}
+
+
+/*   Navbar */
+header {
+
+
+}
+.navbar {
+  display: flex;
+  height: 64px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+
+
+
+}
+
+/* logo */
+.logo {
+  display: flex;
+
+}
+
+.logo .black {
+  font-weight: 600;
+}
+.logo .grey {
+  font-weight: 100;
+}
+
+/* navigation */
+.nav a {
+  padding-left: 16px;
+  font-weight: 400;
+  font-size: 18px;
+
+}
+
+/* learn something section and banner */
+.start {
+
+  background-color: grey;
+  display: inline-flex;
+
+
+
+}
+
+.start img {
+  padding: 32px 24px;
+  width:  60%;
+}
+
+.start-section {
+  margin: auto 0;
+  padding-right: 84px;
+  font-weight: bolder;
+}
+.start-section p {
+  padding: 24px 0;
+}
+
+.start-section button {
+  background-color: black;
+  color: white;
+  width:80%;
+  padding: 8px 0;
+
+}
+
+/* blog section */
+.blog {
+  display: inline-flex;
+}
+
+/* left section */
+
+.main-article {
+  flex-basis:  60%;
+  padding: 32px 24px;
+  border-right: 1px solid grey;
+}
+
+.main-article img {
+  max-width:100%;
+  max-height: auto;
+  padding: 32px auto;
+}
+.main-article h1 {
+  padding: 32px 0 24px;
+}
+.main-article .writer {
+  padding-top: 32px;
+}
+
+
+/* right section */
+.right-section {
+  flex-basis:  40%;
+  padding: 16px 0;
+  max-width: inherit;
+
+
+}
+.articles {
+  display: flex;
+  padding: 16px;
+  align-items: center;
+
+
+
+}
+
+.articles img {
+  width: 45%;
+  max-width: 100%;
+
+  max-height: 100%;
+  padding-right: 16px;
+
+
+}
+.txt {
+
+  align-self: center;
+  flex-basis:  65%;
+
+
+
+
+}
+
+.articles a {
+  color: blue;
+}
+#orientation {
+  border-bottom: 2px solid grey;
+}
+#guest {
+  background-color: grey;
+}
