@@ -42,10 +42,35 @@ header {
 }
 
 /* navigation */
-.nav a {
+.desktop-nav a {
   padding-left: 16px;
   font-weight: 400;
   font-size: 18px;
+
+}
+
+@media only screen and (min-width: 480px) {
+  .mobile-nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .logo .black,
+  .logo .grey {
+    display: none;
+
+  }
+  .desktop-nav {
+    display: none;
+
+  }
+  .mobile-nav img{
+    padding-left: 40px;
+
+  }
+
+
 
 }
 
@@ -79,6 +104,24 @@ header {
   width:80%;
   padding: 8px 0;
 
+}
+
+@media only screen and (max-width:480px) {
+  .start {
+    display: block;
+  }
+  .start img {
+    padding: 0;
+    width: 100%;
+  }
+  .start-section {
+    padding: 32px 16px;
+  }
+  .start-section button {
+    width: 100%;
+    background-color: #BBBBBB;
+    font-weight: bolder;
+  }
 }
 
 /* blog section */
@@ -133,7 +176,7 @@ header {
 
 
 }
-.txt {
+.text {
 
   align-self: center;
   flex-basis:  65%;
@@ -152,6 +195,35 @@ header {
 #guest {
   background-color: grey;
 }
+
+@media only screen and (max-width:480px) {
+  .blog {
+    display:block;
+    background-color: lightgray;
+    border-bottom: 1px solid gray;
+  }
+  .main-article {
+    display: none;
+  }
+  .articles {
+    display: block;
+  }
+  .articles img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  #orientation {
+    border: none;
+  }
+  #guest {
+    background-color: inherit;
+  }
+  .text {
+    padding-top: 30px;
+  }
+}
+
 
 /* start learning */
 .learning {
@@ -199,6 +271,35 @@ header {
   padding: 0 0 24px 16px;
 }
 
+@media only screen and (min-width:480px) {
+  .mobile-courses {
+    display:none;
+  }
+}
+
+@media only screen and (max-width:480px) {
+  .courses {
+    display: none;
+
+  }
+  .mobile-courses {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 16px 32px;
+    border-bottom: 1px solid gray;
+  }
+  .course-box {
+    background-color: darkgray;
+    flex:1;
+    margin: 6px;
+  }
+  .mobile-courses h2 {
+    padding:16px;
+
+  }
+}
+
 /* Thesis section */
 
 .thesis {
@@ -231,6 +332,7 @@ video {
   flex-basis: 40%;
   padding-left: 24px;
 
+
 }
 .fisma {
   display: flex;
@@ -242,20 +344,36 @@ video {
   display: flex;
 }
 
+
 .right img {
   max-width: 100%;
   max-height: auto;
   padding: 16px;
   width:  35%;
 }
-.right .txt h5 {
-  font-size: 24px;
+.right .txt h4 {
+
   font-weight: bold;
 }
 .right .txt p {
   font-size: 14px;
   font-weight: lighter;
   padding-top: 8px;
+}
+@media only screen and (min-width:480px) {
+  .mobile-thesis {
+    display: none;
+  }
+}
+
+@media only screen and (max-width:480px) {
+  .thesis-list {
+    display: none;
+  }
+  .thesis {
+    padding: 32px 0 32px ;
+    border-bottom: 1px solid grey;
+  }
 }
 
 footer {

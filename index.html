@@ -16,17 +16,23 @@
           <h2 class="black">COLMAR</h2><h2 class="grey">ACADEMY</h2>
         </div>
         <div class="nav">
-          <nav>
+          <nav class ="desktop-nav">
             <a>On campus</a>
             <a>Online</a>
             <a>For Companies</a>
             <a>Sign in</a>
 
           </nav>
+          <nav class="mobile-nav">
+            <img src="./resources/images/ic-on-campus.svg" />
+            <img src="./resources/images/ic-online.svg" />
+            <img src="./resources/images/ic-login.svg" />
+          </nav>
         </div>
 
       </div>
     </header>
+    <!-- banner section -->
     <div class="start">
 
       <img src="./resources/images/banner.jpg" alt="banner" />
@@ -39,6 +45,8 @@
         <button>Start here</button>
       </div>
     </div>
+
+    <!-- blog section -->
     <div class ="blog">
       <div class="main-article">
         <img src="./resources/images/information-main.jpg" alt="reading guy"/>
@@ -94,6 +102,36 @@
     <!-- Learning section -->
     <div class="learning">
       <h1>Start learning</h1>
+
+      <!-- mobile only -->
+      <div class="mobile-courses">
+
+        <div class="course-box">
+          <h2>Software Engineering</h2>
+        </div>
+        <div class="course-box">
+          <h2>Computer Art</h2>
+        </div>
+        <div class="course-box">
+          <h2>Design</h2>
+        </div>
+        <div class="course-box">
+          <h2>Data</h2>
+        </div>
+        <div class="course-box">
+          <h2>Business</h2>
+        </div>
+        <div class="course-box">
+          <h2>Marketing</h2>
+        </div>
+
+
+
+
+
+
+      </div>
+      <!-- desktop and tablet -->
       <div class=courses>
         <div class ="card">
           <img src="./resources/images/course-software.jpg" alt ="course-image" />
@@ -148,6 +186,12 @@
     <!-- Thesis section -->
     <div class="thesis">
       <h1>Thesis exhibit</h1>
+      <!--mobile only vieo -->
+      <video class="mobile-thesis" controls>
+        <source src="./resources/videos/thesis.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <!-- Desktop and tablet -->
       <div class="thesis-list">
         <div class="reimagine">
           <video controls>
@@ -166,7 +210,7 @@
           <div class="fisma">
             <img src="./resources/images/thesis-fisma.jpg" />
             <div class="txt">
-              <h5>Fisma:Design and prorotype</h5>
+              <h4>Fisma:Design and prorotype</h4>
               <p>
                 Designer showcase of a new product
               </p>
@@ -175,7 +219,7 @@
           <div class="now">
             <img src="./resources/images/thesis-now-and-then.jpg" />
             <div class="txt">
-              <h5>Now and Then</h5>
+              <h4>Now and Then</h4>
               <p>
                 Research study about New York
               </p>
